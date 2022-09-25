@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Arial";
+    margin: 50;
+    background-image: url("https://static.listadomanga.com/c16bfddc279ff20bd6a5fee31ba708ad.gif");
+    color: white;
+}
+header {
+    background-color: rgb(23, 210, 235);
+}
+
+header .Titulo{
+    margin: 0;
+    padding: 15px 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header .Menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+Menu{
+    margin: auto;
+    max-width: 1400px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 25px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+@media (min-width:850px){
+    header{
+        position: relative;
+        width: 100%;
+    }
+    header .Menu{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+}
+
+.Imagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    padding: 30px;
+}
+
+.Imagenes-to{
+    width: 30%;
+    height: 50;
+    object-fit: cover;
+    background-position: center ;
+}
+
+.Imagenes-item{
+    position: relative;
+    background-position: cover;
+    background-size: center;
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+    animation: 20s infinite ease-in-out;
+    transition: 2s;
+    left: 100px;
+    top: 100px;
+}
+.Imagenes-item:hover {
+    transform: scale(1.5); 
+}
+
+
+
+
